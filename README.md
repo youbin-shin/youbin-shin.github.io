@@ -21,7 +21,7 @@ $ bundle exec jekyll s
 
 ### Setting up Docker environment (optional)
 
-If you're a loyal fan of [**Docker**](https://www.docker.com/) or just too lazy to install the packages mentioned in [_Setting up the local envrionment_](#setting-up-the-local-envrionment), please make sure you have **Docker Engine** installed and running, and then get Docker image `jekyll/jekyll` from Docker Hub by the following command:
+If you're a loyal fan of [**Docker**](https://www.docker.com/) or just too lazy to install the packages mentioned in [_Setting up the local envrionment_](#setting-up-the-local-envrionment), please make sure you have **Docker Engine** installed and running, and then get Docker image `jekyll/jekyll` from Docker Hub by the following command
 
 ```console
 $ docker pull jekyll/jekyll
@@ -37,3 +37,4 @@ $ docker run -it --rm \
     -p 4000:4000 jekyll/jekyll \
     jekyll serve
 ```
+
