@@ -1,8 +1,7 @@
 ---
 title: About
 icon: fas fa-info
-order: 4
-
+order: 5
 # The About page
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -10,5 +9,6 @@ order: 4
 # MIT License
 ---
 
+<!-- 여기 -->
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+## shin you bin
