@@ -140,7 +140,7 @@ defaults:
         - label: Home
           url: /
         - label: Categories
-          url: /tabs/Study/
+          url: /tabs/categories/
   - scope:
       path: ""
       type: tabs # see `site.collections`
