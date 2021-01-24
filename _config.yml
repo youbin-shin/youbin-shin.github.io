@@ -132,14 +132,14 @@ defaults:
         - label: Home
           url: /
         - label: Tags
-          url: /tabs/
+          url: /tabs/tags/
   - scope:
-      path: studies
+      path: categories
     values:
       breadcrumb:
         - label: Home
           url: /
-        - label: Study
+        - label: Categories
           url: /tabs/Study/
   - scope:
       path: ""
@@ -179,5 +179,5 @@ jekyll-archives:
     category: category
     tag: tag
   permalinks:
-    tag: /:name/
-    category: /studies/:name/
+    tag: /tags/:name/
+    category: /categories/:name/

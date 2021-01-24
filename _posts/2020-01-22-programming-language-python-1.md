@@ -3,7 +3,7 @@ title: Python | 1. python intro
 author: youbin
 date: 2020-01-22 00:34:00 +0800
 categories: [Programming language, Python]
-tags: [python, 자료구조, keyword, comment]
+tags: [python, keyword, comment]
 toc: false
 ---
 
