@@ -1,5 +1,5 @@
 ---
-title: Python | 1. python intro
+title: "[Python 배우기] 1. python intro"
 author: youbin
 date: 2020-01-22 00:34:00 +0800
 categories: [Programming language, Python]

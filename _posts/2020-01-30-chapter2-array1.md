@@ -1,5 +1,5 @@
 ---
-title: Algorithm | chapter 2. Array1
+title: "[Algorithm] chapter 2. Array1"
 author: youbin
 date: 2020-01-30 11:33:00 +0800
 categories: [Algorithm, Programming Intermediate]

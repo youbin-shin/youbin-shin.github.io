@@ -1,11 +1,10 @@
 ---
-title: programmers | 두 개 뽑아서 더하기
+title: "[programmers] 두 개 뽑아서 더하기 (python, javascript)"
 author: youbin
 date: 2020-08-09 11:33:00 +0800
 categories: [Solve coding problems, programmers]
 tags: [programmers, python, javascript]
 # pin: true
-
 ---
 
 # [programmers | 두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
