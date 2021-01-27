@@ -48,28 +48,6 @@ layout: null
       {% endif %}
     </url>
   {% endfor %}
-  {% for tag in site.tags %}
-    <url>
-      <loc>{{ site.url }}{{ tag.url }}</loc>
-      {% if tag.lastmod == null %}
-        <lastmod>{{ tag.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ tag.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
-
-      {% if tag.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ tag.sitemap.changefreq }}</changefreq>
-      {% endif %}
-
-      {% if tag.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ tag.sitemap.priority }}</priority>
-      {% endif %}
-    </url>
-  {% endfor %}
   {% for category in site.categories %}
     <url>
       <loc>{{ site.url }}{{ category.url }}</loc>
