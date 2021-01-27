@@ -11,8 +11,8 @@
     {% for page in site.pages %}
     {% if page.layout != nil %}
     {% if page.layout != 'feed' %}
-    {% if page.url != 'norobots' %}
-    {% if page.url != 'assets' %}
+    {% if page.url | remove: 'index.html' != 'norobots' %}
+    {% if page.url | remove: 'index.html' != 'assets' %}
 
 
     <url>
