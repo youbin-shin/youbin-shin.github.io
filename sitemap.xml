@@ -26,25 +26,25 @@ layout: null
 
     </url>
   {% endfor %}
-  {% for tap in site.tabs %}
+  {% for tag in site.tags %}
     <url>
-      <loc>{{ site.url }}{{ tap.url }}</loc>
-      {% if tap.lastmod == null %}
-        <lastmod>{{ tap.date | date_to_xmlschema }}</lastmod>
+      <loc>{{ site.url }}{{ tag.url }}</loc>
+      {% if tag.lastmod == null %}
+        <lastmod>{{ tag.date | date_to_xmlschema }}</lastmod>
       {% else %}
-        <lastmod>{{ tap.lastmod | date_to_xmlschema }}</lastmod>
+        <lastmod>{{ tag.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
 
-      {% if tap.sitemap.changefreq == null %}
+      {% if tag.sitemap.changefreq == null %}
         <changefreq>weekly</changefreq>
       {% else %}
-        <changefreq>{{ tap.sitemap.changefreq }}</changefreq>
+        <changefreq>{{ tag.sitemap.changefreq }}</changefreq>
       {% endif %}
 
-      {% if tap.sitemap.priority == null %}
+      {% if tag.sitemap.priority == null %}
           <priority>0.5</priority>
       {% else %}
-        <priority>{{ tap.sitemap.priority }}</priority>
+        <priority>{{ tag.sitemap.priority }}</priority>
       {% endif %}
 
     </url>
