@@ -26,6 +26,28 @@ layout: null
 
     </url>
   {% endfor %}
+  {% for tab in site.tabs %}
+    <url>
+      <loc>{{ site.url }}{{ tab.url }}</loc>
+      {% if tab.lastmod == null %}
+        <lastmod>{{ tab.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ tab.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if tab.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ tab.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if tab.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ tab.sitemap.priority }}</priority>
+      {% endif %}
+    </url>
+  {% endfor %}
   {% for tag in site.tags %}
     <url>
       <loc>{{ site.url }}{{ tag.url }}</loc>
@@ -46,7 +68,28 @@ layout: null
       {% else %}
         <priority>{{ tag.sitemap.priority }}</priority>
       {% endif %}
+    </url>
+  {% endfor %}
+  {% for category in site.categories %}
+    <url>
+      <loc>{{ site.url }}{{ category.url }}</loc>
+      {% if category.lastmod == null %}
+        <lastmod>{{ category.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ category.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
 
+      {% if category.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ category.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if category.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ category.sitemap.priority }}</priority>
+      {% endif %}
     </url>
   {% endfor %}
 </urlset>
