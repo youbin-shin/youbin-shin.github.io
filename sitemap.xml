@@ -26,4 +26,27 @@ layout: null
 
     </url>
   {% endfor %}
+  {% for tap in site.tabs %}
+    <url>
+      <loc>{{ site.url }}{{ tap.url }}</loc>
+      {% if tap.lastmod == null %}
+        <lastmod>{{ tap.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ tap.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if tap.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ tap.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if tap.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ tap.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
 </urlset>
