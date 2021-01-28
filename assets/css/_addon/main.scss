@@ -32,6 +32,12 @@
  font-family: 'LotteMartHappy', sans-serif;
 }
 
+@font-face {
+  font-family: 'InfinitySans-BoldA1';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
