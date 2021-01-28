@@ -40,7 +40,7 @@
 
 %heading {
   font-weight: 400;
-  font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+  font-family: "Lato", "Microsoft Yahei", sans-serif;
 }
 
 %section {
@@ -65,6 +65,7 @@
   color: $color;
   transition: color 0.35s ease-in-out;
   user-select: none;
+  font-family: "LotteMartHappy";
 }
 
 @mixin icon-round($diameter) {

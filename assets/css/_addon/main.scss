@@ -13,6 +13,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;900&display=swap');
 
+// 눈누 폰트 추가
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
+.lottemarthappy * {
+ font-family: 'LotteMartHappy', sans-serif;
+}
+
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -27,6 +46,7 @@
     }
   }
 }
+
 
 html:not([mode]), html[mode=light] {
   @include mode-toggle();
@@ -73,10 +93,7 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width-medium;
   z-index: 99;
-  // background: var(--sidebar-bg);
-  // background-image: url("https://usercontents-c.styleshare.io/images/31643674/640x-");
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("https://usercontents-c.styleshare.io/images/31643674/640x-");
-  // background-color: #00003F;
 
   a {
     @include sidebar-links;
@@ -438,7 +455,7 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: 'LotteMartHappy', sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
@@ -631,6 +648,7 @@ footer {
 h1 {
   @extend %heading;
   font-size: 1.8rem;
+  // font-family: 'LotteMartHappy'
 }
 
 h2 {
@@ -1357,6 +1375,7 @@ img {
   #topbar {
     padding: 0;
     max-width: 1070px;
+    font-family: 'LotteMartHappy',
   }
 
   #panel-wrapper {
