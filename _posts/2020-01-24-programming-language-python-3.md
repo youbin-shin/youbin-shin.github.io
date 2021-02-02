@@ -1,7 +1,7 @@
 ---
 title: "[Python 배우기] 3. python 연산자"
 author: youbin
-date: 2020-01-22 00:34:00 +0800
+date: 2020-01-24 00:34:00 +0800
 categories: [Programming language, Python]
 tags: [python]
 toc: false
@@ -11,18 +11,83 @@ toc: false
 
 ## 산술 연산자
 
-- +, -, *, /, //(몫), %(나머지, modulo), ** (거듭제곱)
+### 더하기 `+`
 
-- `divmod`
+```python
+a = 3
+b = 2
+c = a + b
+print(c) # 출력: 5
+print(10 + 20) # 출력: 30
+```
 
-  몫과 나머지 한번에 구할 수 있다.
+### 빼기 `-`
 
-  ```python
-  print(divmod(5, 2)) # (2, 1)
-  
-  a, b = divmod(5, 2)
-  print(a) # 2
-  ```
+```python
+a = 5
+b = 2
+c = a - b
+print(c) # 출력: 3
+print(10 - 20) # 출력: -10
+```
+
+### 곱하기 `*`
+
+```python
+a = 3
+b = 2
+c = a * b
+print(c) # 출력: 6
+print(10 * 20) # 출력: 200
+```
+
+### 나누기 `/`
+
+```python
+a = 3
+b = 2
+c = a / b
+print(c) # 출력: 1.5
+print(10 / 20) # 출력: 0.5
+```
+
+#### 몫 구하기 `//`
+
+```python
+a = 10
+b = 5
+c = a // b
+print(c) # 출력: 2
+```
+
+#### 나머지 구하기 `%`
+
+```python
+a = 10
+b = 6
+c = a % b
+print(c) # 출력: 4
+```
+
+#### 몫과 나머지 한번에 구하기 `divmod`
+
+몫과 나머지 한번에 구할 수 있다.
+
+```python
+print(divmod(5, 2)) # (2, 1) : 2가 몫, 1이 나머지 값
+
+a, b = divmod(5, 2)
+print(a) # 2
+```
+
+### 거듭제곱 구하기 `**`
+
+```python
+a = 10
+b = 3
+print(a ** b) # 출력: 1000
+print(2 ** 3) # 출력: 8
+```
 
 ## 비교 연산자
 

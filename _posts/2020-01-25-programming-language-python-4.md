@@ -1,7 +1,7 @@
 ---
 title: "[Python 배우기] 4. python 시퀀스(Sequence) 자료형"
 author: youbin
-date: 2020-01-22 00:34:00 +0800
+date: 2020-01-25 00:34:00 +0800
 categories: [Programming language, Python]
 tags: [python]
 toc: false
@@ -100,15 +100,6 @@ toc: false
 - Unordered
   - {set} - mutable
   - {dictionary: } - mutable
-
-### + 출력하기 print
-
-```python
-print('하나', '둘', '셋', sep='/', end='끝!')
-# 하나/둘/셋끝!
-```
-
-
 
 
 
