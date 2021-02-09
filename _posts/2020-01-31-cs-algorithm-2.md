@@ -2,11 +2,11 @@
 title: "[Algorithm] chapter 1. Algorithm"
 author: youbin
 date: 2020-01-30 11:33:00 +0800
-categories: [Algorithm, Programming Intermediate]
-tags: [Algorithm]
+categories: [Computer Science, Algorithm]
+tags: [Algorithm, Computer Science, CS]
 ---
 
-# 알고리즘이란
+# 알고리즘이란?
 
 유한한 단계를 통해 **문제를 해결하기 위한 절차나 방법**입니다.
 

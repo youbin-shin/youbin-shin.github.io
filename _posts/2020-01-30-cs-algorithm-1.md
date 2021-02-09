@@ -1,9 +1,9 @@
 ---
 title: "[Algorithm] chapter 2. Array1"
 author: youbin
-date: 2020-01-30 11:33:00 +0800
-categories: [Algorithm, Programming Intermediate]
-tags: [array]
+date: 2020-01-31 11:33:00 +0800
+categories: [Computer Science, Algorithm]
+tags: [Algorithm, Computer Science, CS, array]
 ---
 
 # 배열
