@@ -1,9 +1,9 @@
 ---
-title: "[Database] SQL - SELECT문 정복하기"
+title: "[Database] SQL - SELECT문 정복하기 (MySQL)"
 author: youbin
 date: 2021-01-31 11:33:00 +0800
 categories: [Computer Science, Database]
-tags: [Database, Computer Science, SQL, select, count, avg, sum, min, max, where, like, order by, limit, group by]
+tags: [Database, Computer Science, SQL, select, count, avg, sum, min, max, where, like, order by, limit, group by, MySQL]
 ---
 
 # SELECT

@@ -1,13 +1,13 @@
 ---
-title: "[programmers] SQL 고득점 Kit - SELECT 문제 답모음"
+title: "[programmers] SQL 고득점 Kit - SELECT 문제 답모음 (MySQL)"
 author: youbin
 date: 2021-02-01 11:33:00 +0800
 categories: [Solve coding problems, programmers]
-tags: [programmers, select, sql]
+tags: [programmers, select, sql, MySQL]
 # pin: true
 ---
 
-# SQL 고득점 Kit - SELECT 문제 답모음
+# SQL 고득점 Kit - SELECT 문제 답모음 (MySQL)
 
 ##### [SQL SELECT문 개념 정리하러 가기](https://youbin-shin.github.io/posts/cs-database-1/)
 
