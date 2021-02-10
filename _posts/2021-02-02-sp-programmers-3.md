@@ -11,15 +11,15 @@ tags: [programmers, select, sql, sum, max, min, MySQL]
 
 ##### [SQL SELECT문 개념 정리하러 가기](https://youbin-shin.github.io/posts/cs-database-1/)
 
-### SELECT 기본 구문
-
-```sql
-SELECT <column> FROM <table>
-[WHERE <condition>]
-[GROUP BY <column>]
-[ORDER BY <column [ASC/DESC]>]
-[LIMIT <integer>];
-```
+> SELECT 기본 구문
+>
+> ```sql
+> SELECT <column> FROM <table>
+> [WHERE <condition>]
+> [GROUP BY <column>]
+> [ORDER BY <column [ASC/DESC]>]
+> [LIMIT <integer>];
+> ```
 
 
 
@@ -27,7 +27,7 @@ SELECT <column> FROM <table>
 
 [**최댓값 구하기** 문제 풀러가기](https://programmers.co.kr/learn/courses/30/lessons/59415)
 
-### Solution 1 - MAX 이용
+##### Solution 1 - MAX 이용
 
 ```sql
 SELECT MAX(DATETIME) FROM ANIMAL_INS;
@@ -35,7 +35,7 @@ SELECT MAX(DATETIME) FROM ANIMAL_INS;
 
 - `MAX()`를 이용해서 특정 레코드의 최댓값을 구할 수 있다.
 
-### Solution 2 - ORDER BY, LIMIT 이용
+##### Solution 2 - ORDER BY, LIMIT 이용
 
 ```sql
 SELECT DATETIME FROM ANIMAL_INS ORDER BY DATETIME DESC LIMIT 1;
@@ -45,11 +45,13 @@ SELECT DATETIME FROM ANIMAL_INS ORDER BY DATETIME DESC LIMIT 1;
 
 
 
+
+
 ## 최솟값 구하기
 
 [**최솟값 구하기** 문제 풀러가기](https://programmers.co.kr/learn/courses/30/lessons/59038)
 
-### Solution 1 - MIN 이용
+##### Solution 1 - MIN 이용
 
 ```sql
 SELECT MIN(DATETIME) FROM ANIMAL_INS;
@@ -57,13 +59,15 @@ SELECT MIN(DATETIME) FROM ANIMAL_INS;
 
 - `MIN()`를 이용해서 특정 레코드의 최솟값을 구할 수 있다.
 
-### Solution 2 - ORDER BY, LIMIT 이용
+##### Solution 2 - ORDER BY, LIMIT 이용
 
 ```sql
 SELECT DATETIME FROM ANIMAL_INS ORDER BY DATETIME LIMIT 1;
 ```
 
 - `ORDER BY`를 통해 날짜를 오름차순으로 정렬하고 `LIMIT`을 이용하여 1개의 레코드를 보여 최솟값을 구할 수 있다.
+
+
 
 
 
@@ -76,6 +80,8 @@ SELECT COUNT(*) FROM ANIMAL_INS;
 ```
 
 - `COUNT` 를 이용하여 레코드의 개수를 조회한다.
+
+
 
 
 

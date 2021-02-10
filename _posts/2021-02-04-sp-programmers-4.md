@@ -11,15 +11,15 @@ tags: [programmers, select, sql, group by, MySQL]
 
 ##### [SQL SELECT문 개념 정리하러 가기](https://youbin-shin.github.io/posts/cs-database-1/)
 
-### SELECT 기본 구문
-
-```sql
-SELECT <column> FROM <table>
-[WHERE <condition>]
-[GROUP BY <column>]
-[ORDER BY <column [ASC/DESC]>]
-[LIMIT <integer>];
-```
+> SELECT 기본 구문
+>
+> ```sql
+> SELECT <column> FROM <table>
+> [WHERE <condition>]
+> [GROUP BY <column>]
+> [ORDER BY <column [ASC/DESC]>]
+> [LIMIT <integer>];
+> ```
 
 
 
@@ -37,6 +37,8 @@ ORDER BY ANIMAL_TYPE;
 - `GROUP BY` 란 레코드의 값이 같은 것끼리 하나로 묶어주는 것이다.
   - ANIMAL_TYPE으로 묶어 Cat과 Dog가 몇 마리인지 정리할 수 있다.
 - 고양이가 개보다 먼저 조회되기 위해 `ORDER BY`를 사용하였다.
+
+
 
 
 
@@ -62,6 +64,8 @@ ORDER BY NAME;
 
 
 
+
+
 ## 입양 시각 구하기(1)
 
 [**입양 시각 구하기(1)** 문제 풀러가기](https://programmers.co.kr/learn/courses/30/lessons/59412)
@@ -76,6 +80,8 @@ ORDER BY HOUR;
 
 - DATETIME에 시간대별로 조회하기 위해 `GROUP BY`를 HOUR(DATETIME)하고 `HAVING`을 통해 조회하고 싶은 9시부터 19시까지의 시간대의 조건을 두었다.
 - 시간대 별로 정렬하기 위해 `ORDER BY` 을 사용한다.
+
+
 
 
 

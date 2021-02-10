@@ -11,15 +11,15 @@ tags: [programmers, select, sql, MySQL]
 
 ##### [SQL SELECT문 개념 정리하러 가기](https://youbin-shin.github.io/posts/cs-database-1/)
 
-### SELECT 기본 구문
-
-```sql
-SELECT <column> FROM <table>
-[WHERE <condition>]
-[GROUP BY <column>]
-[ORDER BY <column [ASC/DESC]>]
-[LIMIT <integer>];
-```
+> SELECT 기본 구문
+>
+> ```sql
+> SELECT <column> FROM <table>
+> [WHERE <condition>]
+> [GROUP BY <column>]
+> [ORDER BY <column [ASC/DESC]>]
+> [LIMIT <integer>];
+> ```
 
 
 
