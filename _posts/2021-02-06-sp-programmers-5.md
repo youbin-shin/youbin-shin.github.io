@@ -3,7 +3,7 @@ title: "[programmers] SQL 고득점 Kit - IS NULL 문제 답모음 (MySQL)"
 author: youbin
 date: 2021-02-06 12:33:00 +0800
 categories: [Solve coding problems, programmers]
-tags: [programmers, select, sql, "IS NULL", MySQL]
+tags: [programmers, select, sql, MySQL]
 # pin: true
 ---
 
