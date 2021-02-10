@@ -25,12 +25,14 @@ SELECT <column> FROM <table>
 [LIMIT <integer>];
 ```
 
+- `<>` 안에 들어있는 것은 해당하는 이름을 작성해주면 된다!
+
 ### 읽기
 
 - 테이블 전체 조회할 수 있다.
 
   ```sql
-  SELECT * FROM (table 이름);
+  SELECT * FROM <table>;
   ```
 
   - `*` : 전체를 의미하여 전체 컬럼을 보여준다.
@@ -39,13 +41,13 @@ SELECT <column> FROM <table>
 - `WHERE`을 통해 조건(condition)을 추가하여 테이블에 특정 레코드의 특정 column 조회할 수 있다.
 
   ```sql
-  SELECT column1, ... FROM (table 이름) WHERE condition;
+  SELECT column1, ... FROM <table> WHERE condition;
   ```
 
 - `DISTINCT` 를 통해 중복 없이 조회할 수 있다.
 
   ```sql
-  SELECT DISTINCT column FROM (table 이름);
+  SELECT DISTINCT column FROM <table>;
   ```
 
   ```sql
@@ -62,7 +64,7 @@ SELECT <column> FROM <table>
 테이블에 특정 레코드의 개수를 조회한다.
 
 ```sql
-SELECT COUNT(column) FROM (table 이름);
+SELECT COUNT(column) FROM <table>;
 ```
 
 
@@ -72,7 +74,7 @@ SELECT COUNT(column) FROM (table 이름);
 테이블의 특정 레코드의 평균을 보여준다.
 
 ```sql
-SELECT AVG(column) FROM (table 이름);
+SELECT AVG(column) FROM <table>;
 ```
 
 
@@ -81,7 +83,7 @@ SELECT AVG(column) FROM (table 이름);
 
  테이블에 특정 레코드의 합을 보여준다.
  ```sql
-SELECT SUM(column) FROM (table 이름);
+SELECT SUM(column) FROM <table>;
  ```
 
 
@@ -91,7 +93,7 @@ SELECT SUM(column) FROM (table 이름);
 테이블에 특정 레코드의 최소값을 보여준다.
 
   ```sql
-SELECT MIN(column) FROM (table 이름);
+SELECT MIN(column) FROM <table>;
   ```
    ```sql
 -- 예시: classmates 테이블에 가장 어린 학생의 이름과 나이를 보여준다.
@@ -105,7 +107,7 @@ SELECT name, MIN(age) FROM classmates;
 테이블에 특정 레코드의 최대값을 보여준다.
 
   ```sql
-SELECT MAX(column) FROM (table 이름);
+SELECT MAX(column) FROM <table>;
   ```
 
   ```sql
@@ -122,7 +124,7 @@ SELECT MIN(age), MAX(age) FROM classmates;
 테이블에서 특정 조건(`condition`)을 만족하는 특정 레코드를 조회할 수 있다.
 
 ```sql
-SELECT column FROM (table 이름) WHERE condition;
+SELECT column FROM <table> WHERE condition;
 ```
 
 - `condition`에 올 수 있는 예시
@@ -141,7 +143,7 @@ SELECT column FROM (table 이름) WHERE condition;
   - 즉, 둘 중 하나의 조건만 만족해도 조회된다.
 
 ```sql
-SELESELECT column FROM (table 이름) WHERE condition1 [AND|OR] condition2;
+SELESELECT column FROM <table> WHERE condition1 [AND|OR] condition2;
 ```
 
 ```sql
@@ -156,7 +158,7 @@ SELECT * FROM classmates WHERE name='김' and age>=18;
 **LIKE**의 **와일드 카드**를 통해 테이블에서 특정한 패턴을 만족하는 특정 레코드를 조회할 수 있다.
 
 ```sql
-SELECT * FROM (table 이름) WHERE column LIKE 'patterns';
+SELECT * FROM <table> WHERE column LIKE 'patterns';
 ```
 
 ```sql
@@ -189,13 +191,13 @@ SELECT * FROM classmates WHERE phone LIKE '010-%';
 
 ```sql
 -- column1과 column2를 ASC라면 오름차순으로 DESC라면 내림차순으로 정렬한다.
-SELECT colums FROM (table 이름) ORDER BY column1, column2, ASC|DESC;
+SELECT colums FROM <table> ORDER BY column1, column2, ASC|DESC;
 ```
 
 ```sql
 -- column1은 ASC 오름차순으로 column2는 DESC 내림차순으로 정렬한다.
 -- 행렬 각각 정렬 조건을 줄 수 있다.
-SELECT colums FROM (table 이름) ORDER BY column1 ASC column2 DESC;
+SELECT colums FROM <table> ORDER BY column1 ASC column2 DESC;
 ```
 
 ```sql
@@ -216,7 +218,7 @@ SELECT * FROM classmates ORDER BY age ASC name DESC;
 특정 table에서 원하는 개수만큼 가져올 수 있다.
 
 ```sql
-SELECT colums FROM (table 이름) LIMIT num;
+SELECT colums FROM <table> LIMIT num;
 ```
 
 ```sql
@@ -228,7 +230,7 @@ SELECT name FROM classmates LIMIT 10;
   - 몇번째 레코드부터 출력할 지 결정하고 1번째부터면 OFFSET 0이다.
 
 ```sql
-SELECT colums FROM (table 이름) LIMIT num OFFSET num;
+SELECT colums FROM <table> LIMIT num OFFSET num;
 ```
 
 ```sql
@@ -244,7 +246,7 @@ SELECT name FROM classmates LIMIT 10 OFFSET 10; -- 2페이지
 특정 컬럼을 기준으로 그룹화 할 수 있다.
 
 ```sql
-SELECT colums FROM (table 이름) GROUP BY num;
+SELECT colums FROM <table> GROUP BY num;
 ```
 
 ```sql
