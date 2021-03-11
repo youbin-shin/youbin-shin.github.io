@@ -22,6 +22,10 @@ tags: [programmers, python, KAKAO]
 - 경로를 어디 위치부터 선택할지는 `test_weak`를 통해 모든 경우를 탐색했다.
 - 어떤 친구를 위치에 두어야할지는 `dist_list` 에 순열을 이용하여 정렬하여 모든 경우를 탐색했다.
 
+
+
+
+
 ## 주요 과정
 
 1. `weak` 리스트에 각 원소에 `n`을 더한 값을 추가한다. → 반시계로 도는 경우 해결!
@@ -136,6 +140,8 @@ def solution(n, weak, dist):
     if answer == dist_n + 1: answer = -1 # 외벽 점검이 불가능한 경우 -1로 출력할 조건
     return answer
 ```
+
+
 
 
 
